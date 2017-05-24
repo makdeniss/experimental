@@ -1,0 +1,15 @@
+# Make the application available at http://localhost:9090/auth
+server:
+  port: 9090
+  contextPath: /auth
+
+logging:
+  file: c:/CRX_WORK/crx.log
+  level:
+    org.springframework: INFO
+    org.springframework.security: DEBUG
+    
+security:
+  oauth2:
+    resource:
+      filter-order : 3
